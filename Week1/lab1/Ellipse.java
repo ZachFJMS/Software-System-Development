@@ -1,7 +1,7 @@
 public class Ellipse extends Rectangle {
 
     public int getArea(){
-        double A = 3.14 * width * height;
+        double A = 3.14 * getWidth() * getHeight();
         return (int)A;
     }
 
@@ -10,8 +10,8 @@ public class Ellipse extends Rectangle {
     }
 
     public String toString() {
-        return ("AxisA- "+ width+ ", AxisB- "
-                + height+ ", area- "+ getArea()
+        return ("AxisA- "+ getWidth()+ ", AxisB- "
+                + getHeight()+ ", area- "+ getArea()
                 + ", sides- "+ getSides());
     }
 }
